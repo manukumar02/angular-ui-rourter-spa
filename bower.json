@@ -1,0 +1,24 @@
+{
+  "authors": [
+    "Manu Sharma"
+  ],
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-ui-router": "^0.2.18"
+  },
+  "description": "Example Angular SPA",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "keywords": [
+    "angular",
+    "angular-ui-router"
+  ],
+  "license": "MKS",
+  "name": "angular-spa-ui-router",
+  "private": true
+}

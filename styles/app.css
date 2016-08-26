@@ -1,0 +1,37 @@
+﻿body { font-family: sans-serif; }
+h1 { text-align: center; }
+ul li { list-style-type: none; }
+.contacts { padding-left: 0; border-top: 1px solid #000; }
+.contacts li { border-bottom: 1px solid #000; }
+.contacts li a { display: block; padding: .75rem 0; text-align: center; text-decoration: none; color: #000; }
+
+.contact h1 { text-align: left; margin-left: 1rem; margin-bottom: .5rem; float: left; }
+.contact ul { margin:0 0 0 1rem; padding-left: 0; clear: both; }
+.edit-link { display: inline-block; margin-top: 1.72em; margin-left: 2em; }
+.contact li { margin-left: 20px; padding-left: .25rem; position: relative; }
+.contact li::before { width: 0; height: 0; position: absolute; left: -20px; top: -3px; }
+.contact li span { position: relative; }
+.contact li span::before { position: absolute; left: -24px; top: -3px; }
+
+.contact .mobile::before { content: '\1F4F1'; }
+.contact .home::before { content: '\260E'; }
+.contact .work::before { content: '\1F3E2'; }
+.contact .address::before { content: '\1F3E0'; }
+.contact .email::before { content: '\1F582'; }
+
+.modal { position: fixed; left: 0; top: 0; right: 0; bottom: 0; text-align: center; background: rgba(0,0,0,.3); }
+.spinner {
+    position: absolute; left: calc(50% - 4.2em); top: calc(50% - 4.2em); height: 8em; width: 8em;
+    animation: rotate 0.8s infinite linear; border: .4em solid #fff; border-right-color: transparent; border-radius: 50%;
+}
+
+@keyframes rotate {
+  0%    { transform: rotate(0deg); }
+  100%  { transform: rotate(360deg); }
+}
+
+form li { margin-bottom: 3px; }
+form input { padding: 3px; }
+.contact form li::before { top: 0; }
+.contact form li span::before { top: -1px; }
+h1 input { font-size: inherit; font-weight: inherit; }
