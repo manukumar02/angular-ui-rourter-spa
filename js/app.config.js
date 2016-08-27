@@ -9,7 +9,14 @@
             url: '/contacts',
             controller: 'contactList',
             templateUrl: './views/contactList.html'
-        })
+        }).state('contactLetter', {
+            url: '/contacts/:letter',
+            controller: 'contactLetter',
+            templateUrl: './views/contactLetter.html',
+            onEnter: function () {
+                console.log('Entered');
+            }
+        });
 
         $urlRouterProvider.when('', '/contacts')
     }

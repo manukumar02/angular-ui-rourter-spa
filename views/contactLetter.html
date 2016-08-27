@@ -1,1 +1,18 @@
-﻿
+<h1>{{ initial }}</h1>
+<article ng-repeat="contact in letterContacts" class="contact">
+    <h1>{{ contact.fullname }}</h1>
+    <ul>
+        <li ng-repeat="telnum in contact.phone">
+            <span ng-repeat="(key, value) in telnum">
+                <span class="{{key}}">{{ value }}</span>
+            </span>
+
+        </li>
+        <hr>
+        <li class="company">{{ contact.company }}</li>
+        <li class="address">{{ contact.address }}</li>
+        <li class="email">{{ contact.email }}</li>
+        <hr>
+        <li class="mobile">{{ contact.about }}</li>
+    </ul>
+</article>

@@ -8,7 +8,7 @@
     function contacts($http) {
         return {
             getContacts: function () {
-                return $http.get('./contactsStub.json');
+                return $http.get('./contactsDetails.json');
             }
         };
     }

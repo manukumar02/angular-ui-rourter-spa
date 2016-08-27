@@ -12,7 +12,7 @@
             var tmp = [];
 
             response.data.forEach(function (item) {
-                var initial = item.name;
+                var initial = item.fullname;
 
                 if (tmp.indexOf(initial) === -1) {
                     tmp.push(initial);
