@@ -8,10 +8,11 @@
         $scope.contactlist = null;
 
         contacts.getContacts().then(function (response) {
+            //TODO: business logic here
             var tmp = [];
 
             response.data.forEach(function (item) {
-                var initial = item.name.slice(0, 1);
+                var initial = item.name;
 
                 if (tmp.indexOf(initial) === -1) {
                     tmp.push(initial);
