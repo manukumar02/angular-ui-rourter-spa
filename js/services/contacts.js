@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
     'use strict';
 
     angular.module('app').factory('contacts', contacts);
@@ -8,7 +8,7 @@
     function contacts($http) {
         return {
             getContacts: function () {
-                return $http.get('/contactsStub.json');
+                return $http.get('./contactsStub.json');
             }
         };
     }
