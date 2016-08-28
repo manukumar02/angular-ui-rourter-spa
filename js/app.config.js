@@ -13,8 +13,10 @@
             url: '/contacts/:letter',
             controller: 'contactLetter',
             templateUrl: './views/contactLetter.html',
-            onEnter: function () {
-                console.log('Entered');
+            resolve: {
+                delay: function ($timeout) {
+                    return $timeout(function () {}, 2000)
+                }
             }
         });
 

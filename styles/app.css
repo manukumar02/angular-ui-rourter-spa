@@ -76,6 +76,10 @@ ul li {
     content: '\1F4F1';
 }
 
+.contact .about::before {
+    content: '\2ff0';
+}
+
 .contact .company::before {
     content: '\1f3e2';
 }
